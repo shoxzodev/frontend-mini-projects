@@ -1,0 +1,35 @@
+.items {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px 4px;
+    transition: 0.3s all;
+}
+
+.items:hover {
+    background: #ccc;
+}
+
+.active {
+    background: dodgerblue;
+}
+
+.active:hover {
+    background: dodgerblue;
+}
+
+.title {
+    color: black;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: dodgerblue ;
+}
+
+.title_active {
+    color:dodgerblue;
+}
+
+.slash {
+    color: black;
+}
