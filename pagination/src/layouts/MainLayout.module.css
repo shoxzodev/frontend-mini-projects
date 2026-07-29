@@ -33,3 +33,7 @@
 .slash {
     color: black;
 }
+
+.container {
+    padding: 0 20px;
+}

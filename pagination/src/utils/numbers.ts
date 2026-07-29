@@ -2,7 +2,7 @@ export default [
     {
         id:1,
         number:1,
-        path:"/"
+        path:"/modal"
     },
     {
         id:2,

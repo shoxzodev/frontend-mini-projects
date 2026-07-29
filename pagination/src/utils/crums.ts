@@ -2,11 +2,11 @@ export default [
     {
         id:1,
         title:"Home",
-        path:"/"
+        path:"/modal"
     },
     {
         id:2,
         title:"service",
-        path:"/1"
+        path:"/a"
     }
 ]

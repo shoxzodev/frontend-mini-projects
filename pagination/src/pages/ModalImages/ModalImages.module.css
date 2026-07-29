@@ -1,0 +1,79 @@
+.tigger {
+    width: 400px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    margin: 200px auto;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    background:#2b2b2b;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.modal_croos_block {
+    display: flex;
+    justify-content:flex-end;
+    padding: 10px 10px 0 0;
+}
+
+.close_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s all;
+}
+
+.close_btn:hover {
+    color: silver;
+}
+
+.image_block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_title {
+    color: white;
+    text-align: center;
+    animation-name: top_title;
+    animation-duration: 0.5s ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    font-size: 1.5rem;
+}
+
+@keyframes top_title {
+    from {
+        margin-top: 20px;
+    } to {
+        margin-top: 0;
+    }
+}
+
+.modal_img {
+    animation-name: scale_image;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes scale_image {
+    from {
+        scale: 0.3;
+    } to {
+        scale: 1;
+    }
+}
