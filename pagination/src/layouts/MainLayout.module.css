@@ -35,5 +35,11 @@
 }
 
 .container {
-    padding: 0 20px;
+    height: 100%;
+    margin-top: 150px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
 }

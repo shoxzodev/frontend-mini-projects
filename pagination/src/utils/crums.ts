@@ -1,12 +1,12 @@
 export default [
     {
         id:1,
-        title:"Home",
+        title:"modal",
         path:"/modal"
     },
     {
         id:2,
-        title:"service",
-        path:"/a"
+        title:"gallery",
+        path:"/gallery"
     }
 ]

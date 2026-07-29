@@ -7,11 +7,6 @@ export default [
     {
         id:2,
         number:2,
-        path:"/2"
-    },
-    {
-        id:3,
-        number:3,
-        path:"/3"
-    },
+        path:"/gallery"
+    }
 ]

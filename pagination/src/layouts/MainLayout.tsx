@@ -8,7 +8,7 @@ import crums from '../utils/crums';
 export default function MainLayout() {
 
     return (
-        <div>
+        <div className={styles.wrapper}>
             <Header>
                 {
                     crums.map( ( crum:{id:number , title:string , path:string } ) => <NavLink className={ ({isActive}) => isActive ? `${styles.title} ${styles.title_active}` : styles.title} to={"/images"+crum.path} key={crum.id}>{crum.title} <span className={styles.slash}>/</span> </NavLink> )

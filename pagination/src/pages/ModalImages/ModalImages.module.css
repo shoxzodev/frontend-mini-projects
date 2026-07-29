@@ -3,13 +3,13 @@
     height: auto;
     display: block;
     cursor: pointer;
-    margin: 200px auto;
+    margin: auto;
 }
 
 .block {
     display: flex;
     flex-direction: column;
-    background:#2b2b2b;
+    background:rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     width: 100%;
