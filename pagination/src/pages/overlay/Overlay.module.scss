@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+
+    &__items {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #ccc;
+        transition: 0.2s;
+        width: 200px;
+
+        &:hover {
+            background: #f6f6f6;
+        }
+    }
+
+    &__show {
+       height: 400px;
+    }
+
+    &__hide {
+      height: 0;
+      overflow: hidden;
+    }
+}
+
+.active {
+    background: #f6f6f6;
+
+    &:hover {
+        background: #f6f6f6;
+    }
+}

@@ -8,5 +8,20 @@ export default [
         id:2,
         title:"gallery",
         path:"/gallery"
+    },
+    {
+        id:3,
+        title:"overlay",
+        path:"/overlay"
+    },
+    {
+        id:4,
+        title:"thubnails",
+        path:"/thubnails"
+    },
+    {
+        id:5,
+        title:"shake",
+        path:"/shake"
     }
 ]

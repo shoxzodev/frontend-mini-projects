@@ -1,0 +1,43 @@
+@use "../../../styles/mix-ins/mix-in";
+
+.block {
+    background: silver;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+    max-width: 805px;
+    margin: auto;
+
+    &__text , &__box {
+        position: relative;
+    }
+}
+
+.reverse {
+    @include mix-in.boxes(rgb(77, 77, 255) , none , 0 , none );
+}
+
+.block__reverse {
+    @include mix-in.boxes(none , green , 10px 20px , 0.5s );
+}
+
+
+.text {
+    &__show {
+        opacity: 1;
+    }
+
+    &__hide {
+        opacity: 0;
+    }
+}
+
+.bg {
+    &__show {
+        background: rgba(202, 202, 202 , 0.5);
+    }
+
+    &__hide {
+        background: none;
+    }
+}

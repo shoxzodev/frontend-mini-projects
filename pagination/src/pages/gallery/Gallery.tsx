@@ -1,5 +1,5 @@
 import gallery_list from "../../utils/gallery.list"
-import styles from "./Gallery.module.css"
+import styles from "./Gallery.module.scss"
 
 export default function Gallery() {
     return (

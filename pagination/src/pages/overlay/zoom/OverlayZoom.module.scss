@@ -1,0 +1,25 @@
+@use "../../../styles/mix-ins/mix-in";
+
+.block {
+    gap: 20px;
+    max-width: 395px;
+    margin: auto;
+
+    &__text {
+        position: relative;
+    }
+}
+
+.reverse {
+    @include mix-in.boxes(rgb(77, 77, 255) , none , 0 , none );
+}
+
+.text {
+    &__show {
+        scale: 1;
+    }
+
+    &__hide {
+        scale: 0;
+    }
+}

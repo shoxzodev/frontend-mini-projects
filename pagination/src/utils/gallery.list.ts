@@ -15,6 +15,4 @@ export default [
         id:4,
         img_url:"img_mountains.jpg"
     }
-]
-
-// https://www.w3schools.com/howto/
+];

@@ -8,5 +8,40 @@ export default [
         id:2,
         number:2,
         path:"/gallery"
+    },
+    {
+        id:3,
+        number:3,
+        path:"/overlay/slide"
+    },
+    {
+        id:4,
+        number:4,
+        path:"/overlay/fade"
+    },
+    {
+        id:5,
+        number:5,
+        path:"/overlay/zoom"
+    },
+    {
+        id:6,
+        number:6,
+        path:"/overlay/image"
+    },
+    {
+        id:7,
+        number:7,
+        path:"/overlay/title"
+    },
+    {
+        id:8,
+        number:8,
+        path:"/thubnails" 
+    },
+    {
+        id:9,
+        number:9,
+        path:"/shake" 
     }
 ]

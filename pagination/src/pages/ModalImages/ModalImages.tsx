@@ -1,6 +1,6 @@
 import type React from "react"
 import tigger  from "../../assets/tiger.jpg"
-import styles from "./ModalImages.module.css"
+import styles from "./ModalImages.module.scss"
 import { createPortal } from "react-dom"
 import { useState } from "react"
 import ClearIcon from '@mui/icons-material/Clear';

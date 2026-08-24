@@ -1,0 +1,22 @@
+.wrapper {
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 2px;
+    transition: 0.3s all;
+
+    &:hover {
+        box-shadow: 1px 1px 4px blue,
+                    -1px -1px 4px blue
+        ;
+    }
+
+    &__block {
+        padding: 10px 10px 5px 10px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
