@@ -40,7 +40,7 @@ export default function MainLayout() {
             </div>
             <Footer>
                 {
-                    limitPage.map( (num: {id:number , number:number, path:string}) => <NavLink className={ ({isActive}) => isActive ? `${styles.items} ${styles.active}` : styles.items} to={"/images"+num.path} key={num.id}>{num.number}</NavLink>  )
+                    limitPage.map( (num: {id:number , number:number, path:string}) => <NavLink className={ ({isActive}) => isActive ? `${styles.items} ${styles.active}` : styles.items} to={"/images"+num.path} key={num.id} end>{num.number}</NavLink>  )
                 }
             </Footer>
         </div>

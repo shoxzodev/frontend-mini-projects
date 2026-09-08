@@ -53,5 +53,10 @@ export default [
         id:11,
         number:11,
         path:"/slideshow"
+    },
+    {
+        id:12,
+        number:12,
+        path:"/slideshow/gallery"
     }
 ]

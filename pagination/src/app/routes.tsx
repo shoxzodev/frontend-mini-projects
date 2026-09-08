@@ -13,6 +13,8 @@ import Thubnails from "../pages/thumbnails/Thumbnails";
 import ShakeImage from "../pages/shake/ShakeImage";
 import FlipImage from "../pages/flip/FlipImage";
 import SlideShow from "../pages/slideshow/Slideshow";
+import SlideShowLayout from "../layouts/slideshow/SlideShowLayout";
+import SlideShowGallery from "../pages/slideshow/gallery/SlideShowGallery";
 
 export default function Routers() {
     return (
@@ -33,7 +35,10 @@ export default function Routers() {
                     <Route path="images/thubnails" element={<Thubnails />} />
                     <Route path="images/shake" element={<ShakeImage />} />
                     <Route path="images/flip" element={<FlipImage />} />
-                    <Route path="images/slideshow" element={<SlideShow />} />  
+                    <Route path="images/slideshow" element={<SlideShowLayout />}>
+                        <Route index={true} element={<SlideShow />} />
+                        <Route path="gallery" element={<SlideShowGallery />} />
+                    </Route>
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    &__items {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color:black;
+        
+        &__active {
+            text-decoration: underline;
+            color: red;
+        }
+    }
+}
