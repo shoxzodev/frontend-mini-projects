@@ -1,4 +1,5 @@
-export default [
+export default 
+ [
     {
         id:1,
         title:"modal",
@@ -23,5 +24,15 @@ export default [
         id:5,
         title:"shake",
         path:"/shake"
+    },
+    {
+        id:6,
+        title:"flip",
+        path:"/flip" 
+    },
+    {
+        id:7,
+        title:"slideshow",
+        path:"/slideshow" 
     }
 ]

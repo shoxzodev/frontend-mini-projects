@@ -2,10 +2,10 @@ import styles from "./MainLayout.module.scss"
 import { NavLink , Outlet, useLocation } from 'react-router-dom';
 import Header from '../components/breadcrupms/BreadCrupms';
 import Footer from '../components/pagination/Pagination';
+import numbers from "../utils/numbers"
 import crums from '../utils/crums';
-import numbers from '../utils/numbers';
 import type { paginations } from "../types/interface";
-import { useMemo } from "react";
+import {useMemo} from "react";
 
 export default function MainLayout() {
     const params = useLocation();

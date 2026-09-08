@@ -11,6 +11,8 @@ import OverlayTitle from "../pages/overlay/title/OverlayTitle";
 import OverlayImage from "../pages/overlay/image/OverlayImage";
 import Thubnails from "../pages/thumbnails/Thumbnails";
 import ShakeImage from "../pages/shake/ShakeImage";
+import FlipImage from "../pages/flip/FlipImage";
+import SlideShow from "../pages/slideshow/Slideshow";
 
 export default function Routers() {
     return (
@@ -30,6 +32,8 @@ export default function Routers() {
                     </Route>
                     <Route path="images/thubnails" element={<Thubnails />} />
                     <Route path="images/shake" element={<ShakeImage />} />
+                    <Route path="images/flip" element={<FlipImage />} />
+                    <Route path="images/slideshow" element={<SlideShow />} />  
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

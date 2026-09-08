@@ -43,5 +43,15 @@ export default [
         id:9,
         number:9,
         path:"/shake" 
+    },
+    {
+        id:10,
+        number:10,
+        path:"/flip" 
+    },
+    {
+        id:11,
+        number:11,
+        path:"/slideshow"
     }
 ]

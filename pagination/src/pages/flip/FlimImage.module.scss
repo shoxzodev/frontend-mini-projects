@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    transition: 1s;    
+    transform-style: preserve-3d;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+
+.second {
+    background: #ccc;
+    height:100%;
+    width:100%;
+    position: absolute;
+    cursor: pointer;
+    backface-visibility:hidden;
+    transform: rotateY(180deg);
+    color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+.first {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
