@@ -15,6 +15,7 @@ import FlipImage from "../pages/flip/FlipImage";
 import SlideShow from "../pages/slideshow/Slideshow";
 import SlideShowLayout from "../layouts/slideshow/SlideShowLayout";
 import SlideShowGallery from "../pages/slideshow/gallery/SlideShowGallery";
+import Lighbox from "../pages/slideshow/lightbox/Lightbox";
 
 export default function Routers() {
     return (
@@ -38,6 +39,7 @@ export default function Routers() {
                     <Route path="images/slideshow" element={<SlideShowLayout />}>
                         <Route index={true} element={<SlideShow />} />
                         <Route path="gallery" element={<SlideShowGallery />} />
+                        <Route path="lightbox" element={<Lighbox />} />
                     </Route>
                 </Route>
                 <Route path="*" element={<NotFound />} />

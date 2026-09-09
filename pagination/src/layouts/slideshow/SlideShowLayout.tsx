@@ -7,6 +7,7 @@ export default function SlideShowLayout() {
             <nav className={style.nav}>
                 <NavLink className={({isActive}) => (isActive ? style.nav__items__active : style.nav__items)} title="this is the slide show page" to={"/images/slideshow"} end>slideshow</NavLink>
                 <NavLink className={({isActive}) => (isActive ? style.nav__items__active : style.nav__items)} to={"/images/slideshow/gallery"} title="this is the slide show gallery page" end>slideshow gallery</NavLink>
+                <NavLink className={({isActive}) => (isActive ? style.nav__items__active : style.nav__items)} to={"/images/slideshow/lightbox"} title="this is the slide show lighbox page" end>lightbox</NavLink>
             </nav>
             <Outlet />
         </div>

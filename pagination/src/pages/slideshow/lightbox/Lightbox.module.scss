@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+
+    &__wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    &__display {
+        display: none;
+    }
+}
+
+.cross {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.preContainer {
+    height: 100%;
+    width: 100%;
+    background: rgba(47, 47, 47 , 0.99);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.block {
+    position: absolute;
+    background: red;
+    height: 100%;
+    width: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+@mixin routers($padding) {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: $padding;
+    transition: 0.3s;
+    color: white;
+
+    &:hover {
+        background: black;
+    }
+}
+
+.leftBtn {
+    @include routers(10px 0 10px 10px);
+    left: 0
+}
+
+.rightBtn {
+    @include routers(10px 5px 10px 5px);
+    right:0;
+}
+
+.title {
+    position: absolute;
+    bottom: 100px;
+    background: rgb(26, 26, 26);
+    height: 10%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 1.2rem;
+    padding: 4px 0 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px silver;
+    text-align: center;
+}
+
+.isActive {
+    opacity: 0.7;
+}
+
+.number {
+    &__wrapper {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left:10px;
+        color: white;
+        z-index: 10;
+    }
+}
+
+.gallery {
+    &__wrapper {
+        display: flex;
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        left: 0;
+        background: silver;
+        bottom: -150px;
+        z-index: 10;
+    }
+
+    width: calc(100% / 3);
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.listBox {
+  max-width: 1000px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+
+  img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__item {
+    transition: 0.1s ease-in;
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+
+    &__wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    &__display {
+        display: none;
+    }
+}
+
+.preContainer {
+    height: 100%;
+    width: 100%;
+    background: rgba(47, 47, 47 , 0.99);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 200px;
+}
