@@ -1,0 +1,134 @@
+.display {
+    min-height: 80vh;
+    background: url("../../assets/eagle.jpeg") no-repeat;
+    background-size:cover;
+    position: absolute;
+    width: 100%;
+    height: 96.9%;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    background: rgba(192, 192, 192 , 0.5);
+}
+
+.submit {
+    padding: 10px 0;
+    border-radius: 5px;
+    background: rgba(183, 183, 183, 0.5);
+    border: none;
+    color:white;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    font-size: 1.1rem;
+
+    &:hover {
+        background: rgba(183, 183, 183, 0.9);
+    }
+
+    &:focus {
+        scale: 1.02;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(183, 183, 183, 0.5);
+    color: rgb(46, 46, 46);
+    transition: 0.3s linear;
+
+    &::placeholder {
+        color: rgb(46, 46, 46);
+    }
+    
+    &:focus {
+        box-shadow: 1px 1px 10px rgb(108, 108, 108);
+    }
+}
+
+.heading {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    color: rgba(26, 26, 26 , 0.7);
+}
+
+.password {
+    display: flex;
+}
+
+.hide {
+    padding: 10px;
+    background: rgba(44, 44, 44, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.warning {
+    color: red;
+    position: fixed;
+    right:30px;
+    top:50px;
+    transition: 0.5s;
+    background: rgba(192, 192, 192 , 0.5);
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.visibility {
+    &__hidden {
+        opacity: 0;
+    }
+
+    &__visible {
+        opacity: 1;
+    }
+}
+
+.color {
+    &__success {
+        color: green;
+    }
+
+    &__error {
+        color:red
+    }
+}
+
+.stick {
+    height: 5px;
+    width: 100%;
+    animation: linear 1 2s proccess;
+
+    &__success {
+        background: green;
+    }
+
+    &__error {
+        background: red;
+    }
+}
+
+@keyframes proccess {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}

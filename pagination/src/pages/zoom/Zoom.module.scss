@@ -1,0 +1,19 @@
+.wrapper {
+    background: url(../../assets/tiger.jpg) no-repeat;
+    background-size: cover;
+    max-width: 700px;
+    height: 400px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.scope {
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    outline: 3px solid silver;
+    background: url(../../assets/tiger.jpg) no-repeat;
+    
+    background-position: 50% 20%;
+    background-size: cover 450%;
+}

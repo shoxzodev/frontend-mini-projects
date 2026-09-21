@@ -63,5 +63,20 @@ export default [
         id:13,
         number:13,
         path:"/slideshow/lightbox"
+    },
+    {   
+        id:14,
+        number:14,
+        path:"/slider"
+    },
+    {   
+        id:15,
+        number:15,
+        path:"/validation"
+    },
+    {   
+        id:16,
+        number:16,
+        path:"/zoom"
     }
 ]

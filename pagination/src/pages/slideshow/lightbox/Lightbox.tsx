@@ -1,4 +1,3 @@
-// import { createPortal } from "react-dom";
 import styles from "./Lightbox.module.scss"
 import { useState} from "react";
 import files from "../../../utils/files"
@@ -8,7 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Modal from "../../../components/ui/SlideShowModal"
 
 export default function Lighbox() {
-    const [status , setStatus] = useState<boolean>(true)
+    const [status , setStatus] = useState<boolean>(false)
     const [ data , setData ] = useState(files[0])
 
     function changeData(type:string) {

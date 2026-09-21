@@ -34,5 +34,20 @@ export default
         id:7,
         title:"slideshow",
         path:"/slideshow" 
+    },
+    {
+        id:8,
+        title:"slider",
+        path:"/slider" 
+    },
+    {
+        id:9,
+        title:"validation",
+        path:"/validation" 
+    },
+    {
+        id:10,
+        title:"zoom",
+        path:"/zoom" 
     }
 ]

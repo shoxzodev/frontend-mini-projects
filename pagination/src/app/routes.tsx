@@ -16,6 +16,9 @@ import SlideShow from "../pages/slideshow/Slideshow";
 import SlideShowLayout from "../layouts/slideshow/SlideShowLayout";
 import SlideShowGallery from "../pages/slideshow/gallery/SlideShowGallery";
 import Lighbox from "../pages/slideshow/lightbox/Lightbox";
+import Slider from "../pages/comparision/Slider";
+import Validation from "../pages/validation/Validation";
+import Zoom from "../pages/zoom/Zoom";
 
 export default function Routers() {
     return (
@@ -41,6 +44,9 @@ export default function Routers() {
                         <Route path="gallery" element={<SlideShowGallery />} />
                         <Route path="lightbox" element={<Lighbox />} />
                     </Route>
+                    <Route path="images/slider" element={<Slider />} />
+                    <Route path="images/validation" element={<Validation />} />
+                    <Route path="images/zoom" element={<Zoom />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
