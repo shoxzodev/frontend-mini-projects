@@ -1,0 +1,44 @@
+export default 
+
+[
+    {
+        "id":1,
+        "name":"Success",
+        "bgColor":"bg-green-600",
+        "alert":"hover:bg-green-900",
+        "color":"text-green-600",
+        "borderColor":"border-green-600"
+    },
+    {
+        "id":2,
+        "name":"Info",
+        "bgColor":"bg-blue-600",
+        "alert":"hover:bg-blue-900",
+        "color":"text-blue-600",
+        "borderColor":"border-blue-600"
+    },
+    {
+        "id":3,
+        "name":"Warning",
+        "bgColor":"bg-orange-400",
+        "alert":"hover:bg-orange-500",
+        "color":"text-orange-600",
+        "borderColor":"border-orange-600"
+    },
+    {
+        "id":4,
+        "name":"Danger",
+        "bgColor":"bg-red-500",
+        "alert":"hover:bg-red-700",
+        "color":"text-red-600",
+        "borderColor":"border-red-600"
+    },
+    {
+        "id":5,
+        "name":"Default",
+        "bgColor":"bg-gray-400",
+        "alert":"hover:bg-gray-600",
+        "color":"text-gray-600",
+        "borderColor":"border-gray-600"
+    }
+]

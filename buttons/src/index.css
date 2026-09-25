@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+    *    {scroll-behavior: smooth}
+    html {height:100dvh}
+    body {height:100%}
+    #root {height:100%}
+}
+
+@layer components {
+    .text:after {
+        content: "»";
+        @apply absolute -right-2.5 duration-500 opacity-0; 
+    }
+    
+    .text { @apply absolute duration-500 left-7.25 }
+    
+    .button:hover .text:after{ opacity: 1 }
+    
+    .button:hover .text { left: 25px }
+
+    .fade { @apply absolute h-0 w-0 left-0 bottom-0; background: rgba(197, 197, 197, 0.5)}
+
+    .animate { animation: anim 1 ease 0.3s;}
+
+    @keyframes anim {
+        from {
+            height: 0;
+            width: 0;
+        }
+        to { 
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .link { @apply py-1 px-2 text-black text-[0.7rem] duration-75 ease-linear hover:bg-gray-600 hover:text-white }
+
+    .activeLink { @apply text-white bg-gray-600 }
+
+    .lists { display: none }
+
+    .showLink:hover .lists { display: flex }
+
+    .linked{ @apply bg-gray-300 hover:bg-gray-500 w-full py-1 px-4 hover:text-white}
+    .activeLink { @apply bg-gray-500 }
+}
