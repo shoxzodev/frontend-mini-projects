@@ -1,0 +1,66 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: #e6e6e6;
+    width: 500px;
+    padding: 10px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px;
+    background: rgb(24, 160, 24);
+    border: none;
+    font-size: 1rem;
+    color: white;
+    transition: 0.5 ease;
+    margin-top: 20px;
+
+    &:hover {
+        background: rgb(1, 98, 1);
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: right;
+    }
+
+    &__container {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.previous {
+    background: #b4b2b2;
+    color: black;
+
+    &:hover {
+        background: #818080;
+    }
+}
+
+.position {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap:8px;
+    }
+}
+
+.roundBtn {
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background: rgb(151, 151, 151);
+    
+    &__active {
+        @extend .roundBtn;
+        background: rgb(24, 160, 24);
+    }
+}

@@ -1,0 +1,35 @@
+.searchInput {
+    transition: 0.5s linear all;
+    padding: 5px;
+    width: 15%;
+    outline: none;
+    border: 1px solid silver;
+    height: 100%;
+    color: rgb(85, 85, 85);
+    &:focus {
+        width: 70%;
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: rgb(0, 0, 0);
+    }
+}
+
+.block {
+    padding: 10px;
+}

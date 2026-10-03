@@ -1,0 +1,79 @@
+.wrapper {
+    padding:10px;
+    height: 100%;
+}
+
+.btn {
+    background: rgb(118, 146, 174);
+    color: white;
+    border: none;
+    padding:5px;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(9, 126, 242);
+    }
+}
+
+.input {
+    height: 100%;
+    padding:5px;
+    background: rgb(226, 226, 226);
+    border: none;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        
+        ul {
+            li {
+                border: 1px solid rgb(206, 206, 206);
+                list-style: none;
+                padding: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgb(227, 227, 227);
+                }
+            }
+        }
+    }
+}
+
+.form {
+    display:flex;
+    gap: 5px;
+    max-width: 245px;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    
+    &__hide {
+        display: none;    
+    }
+
+    &__item {
+        border: 1px solid rgb(206, 206, 206);
+        // text-align: left;
+        list-style: none;
+        padding: 3px;
+        cursor: pointer;
+        
+        &__disactive {
+            background: white;
+            
+        &:hover {
+            background: rgb(227, 227, 227);
+        }
+        }
+
+        &__active {
+            background: blue;
+            color: white;
+        }
+    }
+}

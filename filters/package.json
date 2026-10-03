@@ -1,5 +1,5 @@
 {
-  "name": "forms",
+  "name": "filters",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,22 +13,19 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.4.0",
     "@mui/material": "^9.4.0",
-    "formik": "^2.4.9",
     "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "sass": "^1.105.0",
-    "sha256": "^0.2.0",
-    "zod": "^4.6.5",
     "zustand": "^5.0.15"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/sha256": "^0.2.2",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }

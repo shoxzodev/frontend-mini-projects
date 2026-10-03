@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer components {
+    .searchInput {
+        background: url('../assets/search-icon.png') no-repeat 1% 40%;
+        background-size: 1rem;
+        @apply p-[4px_4px_4px_25px] text-[0.9rem] outline-none w-full font-normal mb-2.5 border border-[#d1d5dc];
+    }
+
+    .searchInput::placeholder {
+        font-size: 0.9rem;
+    }
+}
+
+
+@layer base {
+    * { font-family: 'Times New Roman', Times, serif;}
+}

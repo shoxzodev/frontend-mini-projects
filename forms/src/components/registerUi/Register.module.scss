@@ -1,0 +1,29 @@
+.title {
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgb(51, 51, 51);
+    text-align: center;
+
+    &__name {
+        font-size: 1rem;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+}
+
+.form {
+    background: #e6e6e6;
+    width: 500px;
+    padding: 10px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+}

@@ -1,0 +1,54 @@
+.wrapper {
+    display: flex;
+    gap: 5px;
+    max-width: 320px;
+    position: relative;
+}
+
+.block {
+    padding: 40px;
+}
+
+.btn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.tooltip {
+    position: absolute;
+    top: -35px;
+    right: -30px;
+    background: gray;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 150px;
+    border-radius: 4px;
+    z-index: 1;
+    display: flex;
+}
+
+.square {
+    background: gray;
+    height:20px;
+    width:20px;
+    position: absolute;
+    top: -27px;
+    rotate: 45deg;
+    z-index: -10;
+    right: 30px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}

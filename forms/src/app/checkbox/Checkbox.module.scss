@@ -1,0 +1,49 @@
+.checkbox {
+    height: 30px;
+    width: 30px;
+    background: red;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.radio {
+    height: 30px;
+    width: 30px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+
+    &__parent {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    &__child {
+        position: absolute;
+        border: 10px solid blue;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
+
+    &__hidden {
+        display: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.list {
+    font-size: 1.2rem;
+}
