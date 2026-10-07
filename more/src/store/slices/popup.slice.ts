@@ -12,18 +12,10 @@ const popup = createSlice({
     },
 
     reducers: {
-        openWindow:(state:stateType) => {
-            state.open = true
-        },
-        closeWindow:(state:stateType) => {
-            state.open = false
-        },
-        changePrompt:(state:stateType , action:{payload:string}) => {
-            state.text = action.payload;
-        },
-        savePrompts: (state:stateType , action:{payload:string}) => {
-            state.prompt = action.payload;
-        }
+        openWindow:(state:stateType) => { state.open = true; },
+        closeWindow:(state:stateType) => { state.open = false; },
+        changePrompt:(state:stateType , action:{payload:string}) => { state.text = action.payload; },
+        savePrompts: (state:stateType , action:{payload:string}) => { state.prompt = action.payload; }
     }
 });
 

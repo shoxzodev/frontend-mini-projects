@@ -39,4 +39,12 @@ body {
   .text {
     color: red;
   }
+
+  .parent:hover .child  {
+    opacity: 1;
+  }
+
+  .child {
+    opacity: 0;
+  }
 }
