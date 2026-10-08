@@ -11,3 +11,11 @@ export type tooltipType = {
         class2:string
     };
     
+export type slideshowType = {
+    text:number,
+    changes:{
+        id:number,
+        paragraph:string,
+        italic:string
+    }
+};
