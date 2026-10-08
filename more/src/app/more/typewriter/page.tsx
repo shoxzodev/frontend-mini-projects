@@ -24,7 +24,7 @@ export default function TypeWritter() {
                 setLimit(0);
                 clearInterval(stop);
             }
-        } , 500)
+        } , 100)
     }
 
     return (
