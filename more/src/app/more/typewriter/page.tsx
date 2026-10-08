@@ -7,6 +7,7 @@ export default function TypeWritter() {
     const [ limit , setLimit ] = useState(0);
 
     function main() {
+        // here is a limit for using , once user click to start it gives him a limit , and then when the proecess ends it starts normally
         if(limit >= 1)
             return 0;
 
@@ -25,7 +26,6 @@ export default function TypeWritter() {
             }
         } , 500)
     }
-
 
     return (
         <div className="p-3">
