@@ -1,28 +1,11 @@
 "use client"
 
+import buttons from "@/src/database/buttons";
 import React, { useState } from "react";
-
-const buttons = [
-    {
-        id:1,
-        paragraph:"\"I love you the more in that I believe you had liked me for my own sake and for nothing else\"",
-        italic:"- John Keats"
-    },
-    {
-        id:2,
-        paragraph:"\"But man is not made for defeat. A man can be destroyed but not defeated.\"",
-        italic:"- Ernest Hemingway"
-    },
-    {
-        id:3,
-        paragraph:"\"I have not failed. I've just found 10,000 ways that won't work.\"",
-        italic:"- Thomas A. Edison"
-    },
-];
 
 export default function PageSlideshow() {
     const [text , setText] = useState<number>(0);
-    const [ changes , setChanges ] = useState(buttons[0]) 
+    const [changes , setChanges ] = useState(buttons[0]) 
 
     function main(e:React.MouseEvent<HTMLButtonElement>) {
         const btnElement = e.target as HTMLButtonElement;
