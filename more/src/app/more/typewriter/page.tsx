@@ -1,32 +1,36 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function TypeWritter() {
-    const [txt , setTxt] = useState<string>("");
+    const [text , setText] = useState("");
+    const [ limit , setLimit ] = useState(0);
 
-    const writeType = () => {
-        let str = "Lorem ipsum typing effect! Great stuff! Cant wait to check out the Try it Yourself!";
-        let newText = "";
-        let counter = 0;
+    function main() {
+        if(limit >= 1)
+            return 0;
+
+        setLimit(1)
+        let str = "salom";
+        let news = "";
+        let count = 0;
         const stop = setInterval(() => {
-            newText += str[counter];
+            news += str[count];
+            setText(news);
+            count++;
 
-            setTxt(newText)
-            counter++;
-
-            if(str.length == counter) {
-                newText = "";
+            if( str.length <= count ) {
+                setLimit(0);
                 clearInterval(stop);
             }
+        } , 500)
+    }
 
-        } , 100);
-    };
 
     return (
         <div className="p-3">
-            <button className="bg-gray-500 cursor-pointer hover:bg-gray-600 text-white rounded-sm py-1 px-2" onClick={writeType}>Start the typing effect</button>
-            <p>{txt}</p>
+            <button onClick={main} className="bg-gray-500 cursor-pointer hover:bg-gray-600 text-white rounded-sm py-1 px-2">Start the typing effect</button>
+            <p>{text}</p>
         </div>
     )
 }
