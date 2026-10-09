@@ -1,53 +1,12 @@
 "use client"
 
-import years from "@/src/database/years";
-import { posterType } from "@/src/types/type";
+import timeline from "@/src/reducers/timeline"
 import { usePathname } from "next/navigation";
 import { useEffect, useReducer } from "react";
 
-
-const initialState = {
-    mount:false,
-    state:false,
-    position(poster:posterType) {
-        if(poster == "odd")
-            return years.filter((item , index) => {
-                    if( index % 2 != 0 ) 
-                        return item
-                    });
-        else if(poster == "even")
-            return years.filter((item , index) => {
-                    if( index % 2 == 0 ) 
-                        return item
-                    }); 
-            
-        return years
-    }
-};
-
-function reducer(state:any , action:any) {
-    switch(action.type) {
-        case "mount":
-            return {
-                ...state,
-                mount:action.payload   
-            }
-        
-        case "state":
-            return {
-                ...state,
-                state:action.payload   
-            }
-        
-        default:
-            return state
-        
-    }
-};
-
 export default function TimeLine() {
     const direction = usePathname();
-    const [ state , dispatch ] = useReducer( reducer , initialState );
+    const [ state , dispatch ] = useReducer( timeline.reducer , timeline.initialState );
     
     useEffect(() => {
         dispatch({type:"mount" , payload: true});
