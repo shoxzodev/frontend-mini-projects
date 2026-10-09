@@ -57,4 +57,21 @@ body {
     -webkit-user-select:none;
     user-select: none;
   }
+
+  .hide-trace::-webkit-scrollbar-track {
+    /* Дорожка scrollbar */
+      background: transparent;
+  }
+
+  .hide-trace::-webkit-scrollbar-thumb {
+    /* Ползунок scrollbar */
+    background: #888;
+    border-radius: none;
+  }
+
+  .hide-trace::-webkit-scrollbar {
+    /* Ширина scrollbar остаётся */
+    width: 7px;
+  }
+
 }
