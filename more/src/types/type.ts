@@ -19,3 +19,5 @@ export type slideshowType = {
         italic:string
     }
 };
+
+export type posterType = "odd" | "even" | "both";
