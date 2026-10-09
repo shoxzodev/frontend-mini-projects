@@ -74,4 +74,20 @@ body {
     width: 7px;
   }
 
+  .flip {
+    transform-style: preserve-3d;
+    transition:0.7s ease-in-out;
+  }
+
+  .flip:hover {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide , .backSide {
+    backface-visibility: hidden;
+  }
+
+  .backSide {
+    transform:rotateY(180deg)
+  }
 }
