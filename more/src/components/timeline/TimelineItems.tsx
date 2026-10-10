@@ -17,5 +17,3 @@ export default function TimeLineItems({event , position}:{event:posterType , pos
         </div>
     )
 }
-
-// -left-7
