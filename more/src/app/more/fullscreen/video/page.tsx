@@ -1,5 +1,5 @@
 "use client"
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export default function FullscreenVideo() {
   const video = useRef<HTMLVideoElement>(null);

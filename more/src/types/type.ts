@@ -21,3 +21,10 @@ export type slideshowType = {
 };
 
 export type posterType = "odd" | "even" | "both";
+
+export type timerType = { 
+    day:number,
+    hour:number,
+    minutes:number,
+    seconds:number
+};
