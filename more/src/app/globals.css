@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 :root {
 }
@@ -106,4 +107,108 @@ body {
     border-radius: 10px; 
   }
 
+  /* first: */
+  .custom-ranger {
+    appearance: none;
+    width: 20%;
+    background: none;
+  }
+
+  .custom-ranger::-webkit-slider-runnable-track {
+    background: silver;
+    height: 20px;
+  }
+
+  .custom-ranger::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: green;
+  }
+
+  /* second: */
+  .custom-rangers {
+    appearance: none;
+    width: 20%;
+    background: none;
+  }
+
+  .custom-rangers::-webkit-slider-runnable-track {
+    background: silver;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .custom-rangers::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-top:-5px;
+    border-radius: 50%;
+    background: green;
+  }
+
+
+  /* third: */
+  .ranger {
+    appearance:none;
+    width: 20%;
+    background: none;
+  }
+
+  .ranger::-webkit-slider-runnable-track {
+    background: silver;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .ranger::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    background: linear-gradient(to right, #444 50%, #fff 50%);
+    cursor: pointer;
+    margin-top: -8px;
+  }
+
+  #mySVG {
+    position: fixed;
+    top: 45%;
+    width: 400px;
+    height: 210px;
+    margin-left:-50px;
+  }
+
+  .bg-enroll {
+    background: url("../assets/img_parallax.jpg");
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    background-attachment: fixed;
+    overflow: auto;
+    background-repeat: no-repeat;
+  }
+
+  .bg-parallax2 {
+    background: url("../assets/img_parallax2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: initial;
+    background-attachment: fixed;
+    height: 400px;
+  }
+
+  .bg-parallax3 {
+    background: url("../assets/img_parallax3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: initial;
+    background-attachment: fixed;
+    height: 500px;
+  }
 }
