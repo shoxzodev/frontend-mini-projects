@@ -1,0 +1,28 @@
+.glas {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+        height: 300px;
+        width: 320px;
+        position: relative;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.magnificer {
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    border: 3px solid ;
+    position: absolute;
+    top: 0;
+    background: url("https://www.w3schools.com/howto/img_girl.jpg") no-repeat;
+    zoom: 1;
+}

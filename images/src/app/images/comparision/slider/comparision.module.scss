@@ -1,0 +1,67 @@
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__wrapper {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  height: 250px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.slider__left,
+.slider__right {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+// вместо цветов можно поставить background-image
+.slider__left  { background: tomato; }
+.slider__right { background: steelblue; }
+
+.btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;               // широкая зона для захвата
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translateX(-50%);
+  cursor: ew-resize;
+  touch-action: none;        // обязательно для тач-экранов
+
+  // вертикальная линия
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+  }
+
+  // круглая ручка
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+  }
+}

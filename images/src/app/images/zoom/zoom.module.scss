@@ -1,0 +1,35 @@
+.zoom {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__main {
+        height: 200px;
+        width: 220px;
+        position: relative;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+
+        &__background {
+            background: url("https://www.w3schools.com/howto/img_girl.jpg") no-repeat;
+            @extend .zoom__main;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.rect {
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
